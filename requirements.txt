@@ -1,0 +1,14 @@
+# オイテル登録システム 推奨依存パッケージ一覧
+# 最終更新: 2025-07-09
+
+Flask==2.0.3           # Webアプリ用
+openpyxl==3.0.10       # Excelバックアップ/リストア
+pandas==1.3.5          # データ処理
+mysql-connector-python==8.0.29  # MySQL接続
+nfcpy==1.0.4           # NFCリーダー制御
+# --- Raspberry Pi子機用 ---
+RPi.GPIO>=0.7.0; platform_system=="Linux"  # GPIO制御 (Raspberry Pi専用)
+adafruit-circuitpython-pca9685>=3.4.0; platform_system=="Linux"  # サーボ制御 (Raspberry Pi専用)
+# --- 開発・運用推奨 ---
+# python-dotenv>=0.21.0   # 環境変数管理 (必要に応じて)
+# gunicorn>=20.1.0        # 本番Webサーバー (Linux運用時)
